@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nos Coiffures | MOKOUTOU PATRICIA COIFFURE</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="coiffures.css" />
+</head>
+<body class="styles-page">
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="brand">
+                <a href="index.html" class="brand-link">
+                    <span class="brand-text">MOKOUTOU PATRICIA</span>
+                </a>
+            </div>
+            <nav class="site-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="coiffures.html" class="active">Coiffures</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="gallery-main">
+        <div class="container">
+            <header class="gallery-header" data-aos="fade-up">
+                <h1 class="main-title">Nos Réalisations</h1>
+                <p class="section-subtitle">Explorez l'excellence et trouvez votre prochain look.</p>
+            </header>
+
+            <div class="filter-menu" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">Toutes</button>
+                <button class="filter-btn" data-filter="tresses">Tresses</button>
+                <button class="filter-btn" data-filter="chignons">Chignons</button>
+                <button class="filter-btn" data-filter="coupes">Coupes</button>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                
+                <div class="gallery-item tresses" data-aos="zoom-in">
+                    <div class="item-inner">
+                        <img src="1.jpeg" alt="Tresses Africaines">
+                        <div class="item-overlay"><span>Tresses</span></div>
+                    </div>
+                </div>
+
+                <div class="gallery-item chignons" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="item-inner">
+                        <img src="2.jpeg" alt="Chignon Élégant">
+                        <div class="item-overlay"><span>Chignons</span></div>
+                    </div>
+                </div>
+
+                </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        // LE SCRIPT DE FILTRAGE
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Change le bouton actif
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                        item.classList.remove('hide');
+                        item.style.display = "block";
+                    } else {
+                        item.classList.add('hide');
+                        item.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

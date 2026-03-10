@@ -1,0 +1,60 @@
+/* RESET ET FOND NOIR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background-color: #0b0b0e; color: #fff; font-family: 'Montserrat', sans-serif; overflow-x: hidden; }
+
+/* ENTÊTE ALIGNÉ */
+.site-header { width: 100%; border-bottom: 1px solid rgba(199, 164, 71, 0.2); background: #0b0b0e; }
+.header-container { max-width: 1200px; margin: 0 auto; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
+.brand-text { color: #c7a447; font-weight: 800; font-size: 1.4rem; letter-spacing: 2px; text-decoration: none; }
+.brand-link { text-decoration: none; }
+.nav-list { display: flex; list-style: none; gap: 30px; }
+.nav-list a { color: #fff; text-decoration: none; text-transform: uppercase; font-size: 0.8rem; font-weight: 600; }
+.nav-list a.active { color: #c7a447; }
+
+/* CENTRAGE DU CONTENU */
+.contact-main { padding: 80px 0; display: flex; justify-content: center; text-align: center; }
+.container { max-width: 1100px; width: 100%; padding: 0 20px; }
+
+.section-title { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 10px; }
+.section-subtitle { color: #888; margin-bottom: 50px; }
+
+/* GRILLE DES CARTES RÉSEAUX SOCIAUX */
+.contact-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px; 
+    margin-bottom: 60px;
+}
+
+.contact-card {
+    background: #16161a;
+    padding: 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-card:hover { transform: translateY(-10px); border-color: #c7a447; }
+
+.icon-box { font-size: 2.5rem; color: #c7a447; margin-bottom: 20px; }
+.contact-card h3 { font-size: 1.5rem; margin-bottom: 10px; }
+.contact-card p { color: #888; margin-bottom: 20px; font-size: 0.9rem; }
+
+.card-link { color: #c7a447; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; }
+
+/* SECTION SALON */
+.visit-us { 
+    background: rgba(199, 164, 71, 0.05); 
+    padding: 40px; 
+    border-radius: 20px; 
+    border: 1px solid rgba(199, 164, 71, 0.1); 
+}
+.visit-us h2 { font-family: 'Playfair Display', serif; color: #c7a447; margin-bottom: 10px; }
+
+/* FOOTER */
+.site-footer { padding: 40px; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); color: #444; font-size: 0.8rem; }
