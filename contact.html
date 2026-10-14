@@ -1,74 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - MOKOUTOU PATRICIA COIFFURE</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="contact.css">
-</head>
-<body class="contact-page">
-
-    <header class="site-header">
-        <div class="header-container">
-            <div class="brand">
-                <a href="index.html" class="brand-link">
-                    <span class="brand-text">MOKOUTOU PATRICIA</span>
-                </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="47.jpeg" />
+    <title>Contact | MOKOUTOU PATRICIA COIFFURE</title>
+  </head>
+  <body>
+    <main>
+      <div class="phead">
+        <h1>Contactez Patricia</h1>
+        <p>Choisissez votre plateforme préférée pour discuter avec nous.</p>
+      </div>
+      <section class="sec">
+        <div class="wrap">
+          <div class="cgrid">
+            <a class="cc rv" data-wa="Bonjour Patricia !" target="_blank" href="#"
+              ><i class="big fa-brands fa-whatsapp"></i>
+              <h3>WhatsApp</h3>
+              <p>Réponse rapide & devis</p>
+              <span class="go">Discuter <i class="fa-solid fa-arrow-right"></i></span
+            ></a>
+            <a class="cc rv" href="https://facebook.com/patricia" target="_blank"
+              ><i class="big fa-brands fa-facebook-f"></i>
+              <h3>Facebook</h3>
+              <p>Nos dernières actualités</p>
+              <span class="go">Suivre <i class="fa-solid fa-arrow-right"></i></span
+            ></a>
+            <a class="cc rv" href="https://www.tiktok.com/@patriciamokoutou" target="_blank"
+              ><i class="big fa-brands fa-tiktok"></i>
+              <h3>TikTok</h3>
+              <p>Nos avant/après en vidéo</p>
+              <span class="go">S'abonner <i class="fa-solid fa-arrow-right"></i></span
+            ></a>
+          </div>
+          <form class="form rv" id="rdv">
+            <h2>Demande de rendez-vous</h2>
+            <p style="text-align: center; color: var(--mut)">
+              Le message s'ouvre dans WhatsApp, prêt à envoyer.
+            </p>
+            <div class="row">
+              <input id="f-name" placeholder="Votre prénom" required aria-label="Prénom" /><select
+                id="f-style"
+                aria-label="Coiffure"
+              ></select>
             </div>
-            <nav class="site-nav">
-                <ul class="nav-list">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="about.html">À propos</a></li>
-                    <li><a href="styles.html">Coiffures</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="row"><input id="f-date" type="date" aria-label="Date souhaitée" /></div>
+            <button class="btn main" type="submit">
+              <i class="fa-brands fa-whatsapp"></i> Envoyer sur WhatsApp
+            </button>
+          </form>
+          <div class="info rv">
+            <div>
+              <i class="fa-solid fa-location-dot"></i>
+              <p data-cfg="adresse"></p>
+            </div>
+            <div>
+              <i class="fa-solid fa-clock"></i>
+              <p data-cfg="horaires"></p>
+            </div>
+          </div>
         </div>
-    </header>
-
-    <main class="contact-main">
-        <div class="container centered-content">
-            <h1 class="section-title" data-aos="fade-up">Contactez Patricia</h1>
-            <p class="section-subtitle" data-aos="fade-up">Choisissez votre plateforme préférée pour discuter avec nous.</p>
-
-            <div class="contact-grid">
-                <a href="https://wa.me/243XXXXXXXXX" target="_blank" class="contact-card" data-aos="zoom-in">
-                    <div class="icon-box"><i class="fa-brands fa-whatsapp"></i></div>
-                    <h3>WhatsApp</h3>
-                    <p>Réponse rapide & Devis</p>
-                    <div class="card-link">Discuter <i class="fa-solid fa-arrow-right"></i></div>
-                </a>
-
-                <a href="https://facebook.com/patricia" target="_blank" class="contact-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="icon-box"><i class="fa-brands fa-facebook-f"></i></div>
-                    <h3>Facebook</h3>
-                    <p>Nos dernières actualités</p>
-                    <div class="card-link">Suivre <i class="fa-solid fa-arrow-right"></i></div>
-                </a>
-
-                <a href="https://www.tiktok.com/@patriciamokoutou" target="_blank" class="contact-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="icon-box"><i class="fa-brands fa-tiktok"></i></div>
-                    <h3>TikTok</h3>
-                    <p>Nos avant/après en vidéo</p>
-                    <div class="card-link">S'abonner <i class="fa-solid fa-arrow-right"></i></div>
-                </a>
-            </div>
-
-            <div class="visit-us" data-aos="fade-up">
-                <h2><i class="fa-solid fa-location-dot"></i> Passez au Salon</h2>
-                <p>Ou venez directement pour une consultation personnalisée ✨</p>
-            </div>
-        </div>
+      </section>
     </main>
-
-    <footer class="site-footer">
-        <p>&copy; 2026 MOKOUTOU PATRICIA COIFFURE. Tous droits réservés.</p>
-    </footer>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({ duration: 1000, once: true });</script>
-</body>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

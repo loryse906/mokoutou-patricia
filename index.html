@@ -1,141 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MOKOUTOU PATRICIA COIFFURE | Haute Coiffure</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="bot.css">
-</head>
-<body>
-
-    <header class="site-header">
-        <div class="brand" data-aos="fade-down">
-            <a href="index.html" class="brand-link">
-                <span class="brand-text">MOKOUTOU PATRICIA</span>
-            </a>
-        </div>
-        <nav class="site-nav">
-            <ul class="nav-list">
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="coiffures.html">Coiffures</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="47.jpeg" />
+    <title>MOKOUTOU PATRICIA COIFFURE | Haute Coiffure à Brazzaville</title>
+  </head>
+  <body>
     <main>
-        <section class="hero">
-            <div class="hero-container" data-aos="zoom-in" data-aos-duration="1500">
-                <h1 class="hero-title">L'Art de sublimer <br><span>votre Chevelure</span></h1>
-                <p class="hero-subtitle">Expertise, Passion et Élégance à Brazzaville</p>
-                
-                <div class="hero-buttons">
-                    <a href="contact.html" class="btn-main">
-                        <span>Prendre RDV</span>
-                        <i class="fa-solid fa-calendar-check"></i>
-                    </a>
-                    <a href="styles.html" class="btn-outline">Explorer</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="styles-section" id="styles">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Nos Collections</h2>
-                <p class="section-subtitle" data-aos="fade-up">Cliquez sur une catégorie pour voir nos réalisations</p>
-                
-                <div class="gallery-grid">
-                    <div class="style-card" data-aos="fade-up" onclick="expandGallery('tresses')">
-                        <div class="card-image">
-                            <img src="10.jpeg" alt="Tresses africaines" />
-                            <div class="image-overlay">
-                                <span>Voir plus</span>
-                            </div>
-                        </div>
-                        <h3>Tresses Africaines</h3>
-                    </div>
-
-                    <div class="style-card" data-aos="fade-up" data-aos-delay="100" onclick="expandGallery('chignon')">
-                        <div class="card-image">
-                            <img src="2.jpeg" alt="Chignon élégant" />
-                            <div class="image-overlay">
-                                <span>Voir plus</span>
-                            </div>
-                        </div>
-                        <h3>Chignons Élégants</h3>
-                    </div>
-
-                    <div class="style-card" data-aos="fade-up" data-aos-delay="200" onclick="expandGallery('coupe')">
-                        <div class="card-image">
-                            <img src="3.jpeg" alt="Coupe moderne" />
-                            <div class="image-overlay">
-                                <span>Voir plus</span>
-                            </div>
-                        </div>
-                        <h3>Coupes Modernes</h3>
-                    </div>
-                </div>
-
-                <div id="expanded-view" class="expanded-view">
-                    <button class="close-gallery" onclick="closeGallery()">&times;</button>
-                    <div id="gallery-content" class="gallery-content"></div>
-                </div>
-            </div>
-        </section>
+      <section class="hero">
+        <div class="float f1" data-img="1"></div>
+        <div class="float f2" data-img="17"></div>
+        <div class="float f3" data-img="21"></div>
+        <div class="float f4" data-img="9"></div>
+        <div class="hero-in">
+          <h1>L'Art de sublimer<br /><em>votre chevelure</em></h1>
+          <p class="sub">Expertise, passion et élégance à Brazzaville</p>
+          <div class="btns">
+            <a href="contact.html" class="btn main"
+              >Prendre RDV <i class="fa-solid fa-calendar-check"></i></a
+            ><a href="coiffures.html" class="btn line">Explorer la galerie</a>
+          </div>
+        </div>
+      </section>
+      <div class="marquee"><div class="track" id="marquee"></div></div>
+      <section class="sec">
+        <div class="wrap">
+          <h2 class="stitle">Nos collections</h2>
+          <p class="ssub">Choisissez une catégorie et découvrez toutes les réalisations.</p>
+          <div class="cats" id="home-cats"></div>
+        </div>
+      </section>
+      <section class="sec">
+        <div class="wrap stats">
+          <div class="stat rv">
+            <b data-count="10" data-suf="+">0</b><small>ans d'expertise</small>
+          </div>
+          <div class="stat rv">
+            <b id="n-styles" data-count="6">0</b><small>catégories de coiffures</small>
+          </div>
+          <div class="stat rv">
+            <b id="n-photos" data-count="24">0</b><small>réalisations à découvrir</small>
+          </div>
+          <div class="stat rv"><b data-count="100" data-suf="%">0</b><small>passion</small></div>
+        </div>
+      </section>
+      <section class="band">
+        <h2 class="rv">Prête pour votre nouveau look ?</h2>
+        <a
+          class="btn main rv"
+          data-wa="Bonjour Patricia, je souhaite prendre rendez-vous."
+          target="_blank"
+          href="#"
+          ><i class="fa-brands fa-whatsapp"></i> Écrire à Patricia</a
+        >
+      </section>
     </main>
-
-    <div id="smart-bot" class="bot-container">
-        <button class="bot-toggle" id="botToggle">
-            <i class="fa-solid fa-comment-dots"></i>
-            <span class="notification-dot"></span>
-        </button>
-        
-        <div class="bot-window" id="botWindow">
-            <div class="bot-header">
-                <div class="bot-info">
-                    <div class="bot-avatar-placeholder">P</div>
-                    <div>
-                        <h4>Assistant Patricia</h4>
-                        <span class="status">En ligne</span>
-                    </div>
-                </div>
-                <button class="close-bot">&times;</button>
-            </div>
-            <div class="bot-chat-area" id="chatMessages">
-                <div class="msg bot-msg">
-                    Bonjour ! Je suis l'assistant virtuel de Patricia. Comment puis-je vous sublimer aujourd'hui ?
-                </div>
-            </div>
-            <div class="bot-input-area">
-                <input type="text" id="userInput" placeholder="Posez votre question...">
-                <button id="sendMsg"><i class="fa-solid fa-paper-plane"></i></button>
-            </div>
-        </div>
-    </div>
-
-    <footer class="site-footer">
-        <div class="footer-content">
-            <p>&copy; 2026 MOKOUTOU PATRICIA COIFFURE. Tous droits réservés.</p>
-            <div class="footer-socials">
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 1000, once: true });
-    </script>
+    <script src="config.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
