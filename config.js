@@ -3,8 +3,8 @@ const CONFIG = {
   whatsapp: "242068718699",
   facebook: "https://facebook.com/patricia",
   tiktok: "https://www.tiktok.com/@patriciamokoutou",
-  adresse: "Brazzaville – ajoutez ici l'adresse exacte du salon",
-  horaires: "Lun – Sam : 8h – 19h (à modifier)",
+  adresse: "Quartier Domaine, Brazzaville (arrêt Pelepele)",
+  horaires: "Lun – Sam : 8h – 19h · Dimanche : fermé",
   /* Gestion des photos par Patricia (voir supabase-setup.sql) : laissez vide pour désactiver */
   supabaseUrl: "https://pbvlfhfouyphjbmgruxn.supabase.co",
   supabaseKey: "sb_publishable_zZe5h8qmSELo8cUth4jytg_kFRGlDmo",
